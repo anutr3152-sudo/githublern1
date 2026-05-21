@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anu | Animated Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Animation */
+        header {
+            background: linear-gradient(135deg, #4a6cf7, #6a11cb);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.3s; }
+        section:nth-child(3) { animation-delay: 0.6s; }
+        section:nth-child(4) { animation-delay: 0.9s; }
+        section:nth-child(5) { animation-delay: 1.2s; }
+        section:nth-child(6) { animation-delay: 1.5s; }
+
+        h2 {
+            color: #4a6cf7;
+            margin-bottom: 20px;
+        }
+
+        /* About Image */
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: transform 0.4s ease;
+        }
+
+        .about img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Skills Animation */
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills li {
+            display: inline-block;
+            background: #4a6cf7;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .skills li:hover {
+            transform: scale(1.2);
+            background: #6a11cb;
+        }
+
+        /* Projects */
+        .project {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Resume Button */
+        .resume a {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #4a6cf7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .resume a:hover {
+            background: #6a11cb;
+            transform: scale(1.1);
+        }
+
+        /* Contact */
+        .contact p {
+            margin: 8px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Keyframes */
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Anu</h1>
+    <p>AI & ML Student | Full Stack Developer</p>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <img src="C:\Users\acer\Downloads\MYIMG.jpeg" alt="Profile Photo">
+    <p>
+        I am a pre-final year B.E. Artificial Intelligence and Machine Learning student.
+        Passionate about AI, web development, and building smart solutions.
+    </p>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>Full Stack</li>
+    </ul>
+</section>
+
+<section class="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Designed a responsive personal portfolio using HTML & CSS.</p>
+    </div>
+
+    <div class="project">
+        <h3>AI Chatbot</h3>
+        <p>Built an intelligent chatbot using Python and NLP concepts.</p>
+    </div>
+
+</section>
+
+<section class="resume">
+    <h2>Resume</h2>
+    <a href="resume.pdf" download>Download Resume</a>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: anutr3152@gmail.com</p>
+    <p>Phone: +91 9360037249</p>
+</section>
+
+<footer>
+    <p>© 2026 Anu | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
